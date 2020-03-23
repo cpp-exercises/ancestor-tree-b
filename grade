@@ -1,6 +1,6 @@
 #!/bin/bash
 source grade_utils
-printf "\n\n*** Grade FamilyTree Part B *** \n\n"
+printf "\n\n*** Grade Ancestor-Tree Part B *** \n\n"
 
 make clean
 call make -f Makefile test
