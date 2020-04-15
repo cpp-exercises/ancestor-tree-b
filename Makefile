@@ -9,7 +9,7 @@ OBJECTS=FamilyTree.o
 run: test
 	./$^
 
-test: TestRunner.o Test1.o Test2.o $(OBJECTS)
+test: TestRunner.o Test_ariel_saadon.o Test_tom_latin.o $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $^ -o test
 
 %.o: %.cpp $(HEADERS)
