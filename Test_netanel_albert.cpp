@@ -158,7 +158,7 @@ TEST_CASE("remove function") {
  
     CHECK_THROWS(T->remove("Dani")); // cant remove unexist 
 
-    CHECK(T->remove("Betuel"));
+    CHECK_NOTHROW(T->remove("Betuel"));
 
     CHECK(T->relation("Betuel") == "unrelated");
     CHECK(T->relation("Nahor") == "unrelated");
@@ -167,42 +167,42 @@ TEST_CASE("remove function") {
     CHECK_THROWS(T->remove("Betuel")); // already removed 
     CHECK_THROWS(T->remove("Nahor")); // already removed 
     CHECK_THROWS(T->remove("Milca")); // already removed 
-    
 
-    CHECK(T->remove("Haran"));
+
+    CHECK_NOTHROW(T->remove("Haran"));
     CHECK(T->relation("Haran") == "unrelated");
     CHECK_THROWS(T->remove("Haran")); // already removed 
 
 
-    CHECK(T->remove("Lavan"));
+    CHECK_NOTHROW(T->remove("Lavan"));
     CHECK(T->relation("Lavan") == "unrelated");
     CHECK_THROWS(T->remove("Lavan")); // already removed 
 
-    CHECK(T->remove("Terah"));
+    CHECK_NOTHROW(T->remove("Terah"));
     CHECK(T->relation("Terah") == "unrelated");
     CHECK_THROWS(T->remove("Terah")); // already removed 
 
-    CHECK(T->remove("Sara"));
+    CHECK_NOTHROW(T->remove("Sara"));
     CHECK(T->relation("Sara") == "unrelated");
     CHECK_THROWS(T->remove("Sara")); // already removed 
 
-    CHECK(T->remove("Avraham"));
+    CHECK_NOTHROW(T->remove("Avraham"));
     CHECK(T->relation("Avraham") == "unrelated");
     CHECK_THROWS(T->remove("Avraham")); // already removed 
 
-    CHECK(T->remove("Rivka"));
+    CHECK_NOTHROW(T->remove("Rivka"));
     CHECK(T->relation("Rivka") == "unrelated");
     CHECK_THROWS(T->remove("Rivka")); // already removed 
 
-    CHECK(T->remove("Isaac"));
+    CHECK_NOTHROW(T->remove("Isaac"));
     CHECK(T->relation("Isaac") == "unrelated");
     CHECK_THROWS(T->remove("Isaac")); // already removed 
 
-    CHECK(T->remove("Rachel"));
+    CHECK_NOTHROW(T->remove("Rachel"));
     CHECK(T->relation("Rachel") == "unrelated");
     CHECK_THROWS(T->remove("Rachel")); // already removed 
 
-    CHECK(T->remove("Yaakov"));
+    CHECK_NOTHROW(T->remove("Yaakov"));
     CHECK(T->relation("Yaakov") == "unrelated");
     CHECK_THROWS(T->remove("Yaakov")); // already removed 
 
