@@ -1,5 +1,7 @@
 #!/bin/bash
 source grade_utils
+run_in_folder_if_exists "solution"
+
 printf "\n\n*** Grade Ancestor-Tree Part B *** \n\n"
 
 make -f Makefile clean
